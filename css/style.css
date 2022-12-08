@@ -81,6 +81,39 @@ header {
     padding: 2rem;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    padding: 0.5rem;
+    /* width: 50px;
+    height: 50px; */
+}
+
+li.gh img {
+    width: 60px;
+    height: 60px;
+}
+
+li.twitter img {
+    width: 40px;
+    height: 40px;
+}
+
+li.fiverr img {
+    width: 45px;
+    height: 45px;
+}
+
+li.upwork img {
+    width: 42px;
+    height: 42px;
+}
+
 footer {
     font-family: 'Averia Sans Libre', Helvetica, sans-serif;
     /* padding: 2rem; */
@@ -91,12 +124,35 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* body {
+    body {
         display: grid;
-
-    } */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
     header {
-        padding: 1rem;
+        padding: 0.5rem;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .about {
+        padding: 0.5rem;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .buttons {
+        padding: 0.5rem;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .links {
+        padding: 0.5rem;
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    footer {
+        padding: 0.5rem;
+        grid-row: 5/6;
+        grid-column: 1/2;
     }
     .wave {
         background-image: url(../images/layer2.svg);

@@ -1,0 +1,52 @@
+/*
+* contains all of the styles for the site
+* this is the main css file
+*
+* Author: 	Rohit Mehta
+*/
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Passero+One&family=VT323&display=swap');
+/* font-family: 'Averia Sans Libre', cursive; For h2
+font-family: 'Passero One', cursive; for h1
+font-family: 'VT323', monospace;  for body text*/ 
+
+:root {
+    --color-text: #282220;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18pt;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+    font-family: 'VT323', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Passero One', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    /* margin: 0 auto;
+    padding: 0 1rem; */
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}

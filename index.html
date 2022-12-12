@@ -12,60 +12,73 @@
 
 <body class="wave">
     <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Logo" class="logo">
+            </div>
+            <div class="nav-nav">
+                <ul class="nav-ul">
+                    <li><a href="#projects">Projects</a></li>
+                    <li class="hire"><a href="mailto:rohitm09@proton.me">Hire Me!</a></li>
+                </ul>
+            </div>
+        </nav>
         <h1>👋 Hello, I'm <a href="http://rrohit.me">Rohit Mehta</a></h1>
     </header>
 
-    <div class="grid">
-        <div class="grid-item about">
-            <h2>About Me</h2>
-            <p>
-                I'm a computer science student who is passionate about creating solutions to problems. I can help you
-                build your next web project, wheteher it's a wordpress site or a from scratch static site.
-                You also desire a personalized domain? I can help you with that too!
-            </p>
-            <p>
-                Don't hesitate to reach out to me. I would love to help you out!
-            </p>
-        </div>
-        <div class="grid-item sections">
-            <div class="big-bold">
-                <a href="#">Resume</a>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a computer science student who is passionate about creating solutions to problems. I can help you
+            build your next web project, wheteher it's a wordpress site or a from scratch static site.
+            You also desire a personalized domain? I can help you with that too!
+        </p>
+        <p>
+            Don't hesitate to reach out to me. I would love to help you out!
+        </p>
+
+        <ul class="hl">
+            <li class="gh">
+                <a href="https://github.com/r0hitm" target="_blank" rel="noopener noreferrer">
+                    <img src="images/gh.svg" alt="My Github Profile">
+                </a>
+            </li>
+            <li class="so">
+                <a href="https://stackoverflow.com/users/10857172/hiro" target="_blank" rel="noopener noreferrer">
+                    <img src="images/stack-overflow.svg" alt="My Stack Overflow Profile">
+                </a>
+            </li>
+            <li class="twitter">
+                <a href="https://twitter.com/_r0hitm" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.svg" alt="My Twitter Profile">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-img">
+                <img src="#" alt="icon">
             </div>
-            <div class="big-bold">
-                <a href="#">Projects</a>
-            </div>
-            <div class="big-bold">
-                <a href="mailto:rohitm09@proton.me">Hire Me</a>
+            <div class="project-desc">
+                <h3><a href="#">Project Name</a></h3>
+                <p>
+                    project Description
+                </p>
             </div>
         </div>
-        <div class="grid-item links">
-            <ul>
-                <li class="gh">
-                    <a href="https://github.com/r0hitm" target="_blank" rel="noopener noreferrer">
-                        <img src="images/gh.svg" alt="Github">
-                    </a>
-                </li>
-                <li class="twitter">
-                    <a href="https://twitter.com/_r0hitm" target="_blank" rel="noopener noreferrer">
-                        <img src="images/twitter.svg" alt="Twitter">
-                    </a>
-                </li>
-                <li class="fiverr">
-                    <a href="https://www.fiverr.com/r0hitm" target="_blank" rel="noopener noreferrer">
-                        <img src="images/fiverr.svg" alt="Fiverr">
-                    </a>
-                </li>
-                <li class="upwork">
-                    <a href="https://www.upwork.com/freelancers/~01b052adae017f5a6d" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="images/upwork.svg" alt="Upwork">
-                    </a>
-                </li>
-            </ul>
+        <div class="all">
+            <a href="#">See all projects</a>
         </div>
-    </div>
+    </section>
 
     <footer>
+        <div class="hire">
+            <a href="mailto:rohitm09@proton.me">Hire Me!</a>
+        </div>
+        <p>Designed and built by <a href="http://rrohit.me">Rohit Mehta</a></p>
         <p>© 2021 Rohit Mehta</p>
     </footer>
 </body>

@@ -64,6 +64,7 @@ nav {
     /* background-color: var(--text-color-2); */
     color: var(--default-text-color);
     width: fit-content;
+    font-size: large;
 }
 
 .logo {
@@ -122,9 +123,34 @@ li.twitter img {
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
     body {
         background-image: url(../images/layer1.svg);
         aspect-ratio: 16/9;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "about projects"
+            "footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    .nav-ul li:first-child {
+        display: none;
+    }
+    section {
+        padding: 2rem;
+    }
+    .about {
+        grid-area: about;
+    }
+    .projects {
+        grid-area: projects;
+    }
+    footer {
+        grid-area: footer;
     }
 }
